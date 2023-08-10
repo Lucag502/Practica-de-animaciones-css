@@ -4,13 +4,14 @@
 }
 
 .body{
-    font-family: 'Oswald', sans-serif;
+    
     height: 100%;
     margin: 0;
     overflow: hidden;
 }
 
 .page{
+    font-family: 'Oswald', sans-serif;
     position: relative;
     height: 100vh;
 }
@@ -41,8 +42,30 @@
 }
 
  .navbar-content img{
-    width: 25.55%;
+    width: 145px;
+    padding: 0;
 }  
+
+.navbar-content ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    width: 450px;
+}
+
+.navbar-content ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300px;
+    font-size: 18px;
+    transition: color 0.5s;
+}
+
+.navbar-content ul li a:hover{
+   color:var(--yellow);
+    
+}
 
 
 .loader{
@@ -55,7 +78,7 @@
     position: absolute;
     z-index: 3;
 
-    animation: loader 2s linear forwards;
+    animation: loader 0.4s linear forwards;
 }
 
 .loader div{
