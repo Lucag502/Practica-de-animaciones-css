@@ -117,6 +117,22 @@
     }
 }
 
+.side-content{
+    background-color: red;
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+
+    grid-area: aside;
+}
+
+.side-content p{
+    transform: rotate(-90deg);
+    font-size: 30px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
 .loader{
     background: var(--blue);
     width: 100%;
