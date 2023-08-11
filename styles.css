@@ -118,7 +118,7 @@
 }
 
 .side-content{
-    background-color: red;
+    /* background-color: red; */
     display:grid;
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
@@ -131,6 +131,31 @@
     font-size: 30px;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    padding: 0 0 45;
+    white-space: nowrap;
+    opacity: 0;
+
+    animation-name: side-content-text;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes side-content-text {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    } 
+}
+
+.side-content-img{
+    grid-column: 2/6;
+    grid-row: 1/2;
+    width: 500%;
+    height: 90%;
 }
 
 .loader{
