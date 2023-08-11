@@ -154,8 +154,8 @@
 .side-content img{
     grid-column: 2/6;
     grid-row: 1/2;
-    width: 115%;
-    height: 90%;
+    width: 110%;
+    height: 100%;
 
     animation: 2s side-content-img .5s ease-in-out;
 }
@@ -179,6 +179,50 @@
     height: 100%;
 }
 
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: var(--yellow);
+    border-radius: 0 80px 0px 0;
+    transform: translateY(100%);
+
+    animation-name: footer;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out ;
+    animation-fill-mode: forwards;   
+}
+
+@keyframes footer {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.footer div{
+    background-color: var(--blue);
+    width: 130px;
+    height: 700px;
+    height: 60%;
+}
+
+.footer div:hover img{
+    cursor: pointer;
+    transform: translateY(-20px) scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer div img{
+    
+    width: 150px;
+    transform: translateY(0px) scale(1);
+    transition: transform 0.3s ease-in-out;
+}
 
 .loader{
     background: var(--blue);
