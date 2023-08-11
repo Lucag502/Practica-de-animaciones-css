@@ -151,12 +151,34 @@
     } 
 }
 
-.side-content-img{
+.side-content img{
     grid-column: 2/6;
     grid-row: 1/2;
-    width: 500%;
+    width: 115%;
     height: 90%;
+
+    animation: 2s side-content-img .5s ease-in-out;
 }
+
+@keyframes side-content-img {
+    0%{
+        transform: translateX(600px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.side-content div {
+    background-color: var(--yellow);
+
+    grid-column: 4/7;
+    grid-row: 1/2;
+
+    height: 100%;
+}
+
 
 .loader{
     background: var(--blue);
