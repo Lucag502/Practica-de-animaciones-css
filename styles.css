@@ -32,6 +32,18 @@
 .navbar{
     background-color: var(--blue);
     grid-area: nav;
+
+    animation: 2s navbar 0.5s ease-in-out;
+}
+
+@keyframes navbar {
+    0%{
+        transform: translateY(-200px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .navbar-content{
@@ -39,6 +51,8 @@
     align-items: center;
     width: 100%;
     padding: 0 0 0 80px;
+
+    animation: 2s navbar 0.5s ease-in-out;
 }
 
  .navbar-content img{
@@ -57,16 +71,14 @@
 .navbar-content ul li a{
     text-decoration: none;
     color: white;
-    font-weight: 300px;
-    font-size: 18px;
+    font-weight:300;
+    font-size: 20px;
     transition: color 0.5s;
 }
 
 .navbar-content ul li a:hover{
    color:var(--yellow);
-    
 }
-
 
 .loader{
     background: var(--blue);
