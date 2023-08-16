@@ -339,11 +339,11 @@ visibility: visible;
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 .visible{
-    display: grid;
+    display: grid !important;
 }
 
 .modal{
@@ -351,5 +351,14 @@ visibility: visible;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    z-index: 3;
+    z-index: 4;
+
+    display: grid;
+    place-items: center;
+}
+
+.modal-content{
+    background-color:white;
+    width: 50%;
+    height: 50%;
 }
